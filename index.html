@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github pages</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bio | Степа</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: #0e0f11;
+        color: #e6e7e9;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .card {
+        max-width: 700px;
+        width: 100%;
+        background: #15171a;
+        border-radius: 18px;
+        padding: 40px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        border: 1px solid #25272b;
+        animation: fade 0.6s ease;
+    }
+
+    @keyframes fade {
+        from {opacity: 0; transform: translateY(10px);}
+        to   {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: -1px;
+    }
+
+    .subtitle {
+        margin-top: 6px;
+        font-size: 18px;
+        color: #9fa3a9;
+    }
+
+    .section {
+        margin-top: 30px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #7be0c3;
+    }
+
+    p {
+        line-height: 1.65;
+        font-size: 16px;
+    }
+
+    .links {
+        margin-top: 30px;
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 15px;
+        background: #1f2125;
+        color: #e6e7e9;
+        border: 1px solid #292c31;
+        transition: 0.25s ease;
+    }
+
+    .btn:hover {
+        background: #7be0c3;
+        color: #0e0f11;
+        border-color: transparent;
+    }
+</style>
 </head>
+
 <body>
-    <h2>Hi</h2>
+
+<div class="card">
+    <h1>Степа</h1>
+    <div class="subtitle">Developer • Creator • Tech Enthusiast</div>
+
+    <div class="section">
+        <div class="section-title">Обо мне</div>
+        <p>
+            Увлекаюсь разработкой, созданием приложений, автоматизацией и UI-дизайном. 
+            Люблю создавать удобные инструменты, оптимизировать процессы и разбираться в новых технологиях.
+            Всегда работаю на результат и стремлюсь делать продукты, которые приятно использовать.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Чем занимаюсь</div>
+        <p>
+            • Разработка Python-приложений с GUI  
+            • Создание мобильных и десктопных приложений  
+            • Инструменты автоматизации и интеграции API  
+            • Работа с игровыми проектами и сервисами  
+            • UI/UX-макеты и прототипирование  
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Контакты</div>
+        <div class="links">
+            <a class="btn" href="#">Telegram</a>
+            <a class="btn" href="#">GitHub</a>
+            <a class="btn" href="#">Email</a>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
